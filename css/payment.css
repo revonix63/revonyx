@@ -1,0 +1,314 @@
+/* Payment Page Specific Styles */
+.payment-section {
+    min-height: 100vh;
+    padding: 120px 0 50px;
+    background: var(--gradient-dark);
+}
+
+.payment-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.payment-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.payment-header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.payment-info {
+    background: rgba(30, 144, 255, 0.1);
+    border: 1px solid rgba(30, 144, 255, 0.3);
+    border-radius: 12px;
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.payment-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.payment-info i {
+    color: var(--primary-blue);
+    margin-right: 8px;
+}
+
+/* Pricing Plans */
+.pricing-plans {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 50px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plan-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(30, 144, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+    border-color: rgba(30, 144, 255, 0.4);
+}
+
+.plan-card.popular {
+    border-color: var(--accent-gold);
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-gold);
+    color: var(--black);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.plan-header {
+    margin-bottom: 25px;
+}
+
+.plan-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.plan-card.popular .plan-icon {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+}
+
+.plan-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.plan-price .currency {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.plan-price .amount {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--primary-blue);
+    margin-left: 5px;
+}
+
+.plan-subtitle {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.plan-features {
+    margin-bottom: 30px;
+}
+
+.plan-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 0.9rem;
+}
+
+.plan-features i {
+    color: var(--primary-blue);
+    font-size: 0.8rem;
+}
+
+.plan-button {
+    width: 100%;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.plan-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.plan-card.popular .plan-button {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: var(--black);
+}
+
+/* Custom Request */
+.custom-request {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.custom-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(30, 144, 255, 0.2);
+    text-align: center;
+}
+
+.custom-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+.custom-card h3 i {
+    color: var(--accent-gold);
+    margin-right: 10px;
+}
+
+.custom-card p {
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.custom-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.custom-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.custom-btn.telegram {
+    background: #0088cc;
+    color: var(--white);
+}
+
+.custom-btn.instagram {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: var(--white);
+}
+
+.custom-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+
+/* Gumroad Popup */
+#gumroad-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#gumroad-frame {
+  width: 90%;
+  height: 90%;
+  border: none;
+  border-radius: 12px;
+}
+
+#close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Thank You */
+#thank-you {
+  display: none;
+  background-color: #1d1d1d;
+  padding: 60px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#thank-you h2 {
+  font-size: 2rem;
+  color: #00ffc3;
+}
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Plan - Revonyx</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/revonyx_logo.png" alt="Revonyx Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+                <a href="index.html#samples" class="nav-link">Samples</a>
+                <a href="index.html#testimonials" class="nav-link">Reviews</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="container">
+            <div class="payment-header">
+                <h1>Choose Your Perfect Plan</h1>
+                <p id="welcomeMessage">Ready to get your personalized workout music?</p>
+            </div>
+
+            <!-- Pricing Plans -->
+            <div class="pricing-plans">
+                <div class="plan-card" data-plan="starter">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <h3>Starter Boost</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">5</span>
+                        </div>
+                        <p class="plan-subtitle">10 Songs</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Personalized with your name</li>
+                            <li><i class="fas fa-check"></i> Your workout goals included</li>
+                            <li><i class="fas fa-check"></i> Light motivational playlist</li>
+                            <li><i class="fas fa-check"></i> Perfect for beginners</li>
+                    </div>
+                    <button class="plan-button" onclick="openPopup('https://revonyx.gumroad.com/l/starterboost?_gl=1*14vxy4y*_ga*MTc3OTM4OTk5NC4xNzUzODY3MzE5*_ga_6LJN6D94N6*czE3NTM5MjA2ODIkbzUkZzEkdDE3NTM5MjQyNTYkajM3JGwwJGgw')">
+                        <i class="fas fa-music"></i>
+                        Pay with Card or PayPal
+                    </button>               </div>
+
+                <div class="plan-card popular" data-plan="pro">
+                    <div class="popular-badge">
+                        <i class="fas fa-star"></i>
+                        Most Popular
+                    </div>
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Pro Pump</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">9</span>
+                        </div>
+                        <p class="plan-subtitle">20 Songs</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Starter</li>
+                            <li><i class="fas fa-check"></i> Double the energy & motivation</li>
+                            <li><i class="fas fa-check"></i> Your favorite artists' vibe</li>
+                            <li><i class="fas fa-check"></i> Perfect for regular workouts</li>
+                        </ul>
+                    </div>
+                    <button class="plan-button" onclick="openPopup('https://revonyx.gumroad.com/l/propump?_gl=1*ab0w37*_ga*MTc3OTM4OTk5NC4xNzUzODY3MzE5*_ga_6LJN6D94N6*czE3NTM5MjA2ODIkbzUkZzEkdDE3NTM5MjQyNTYkajM3JGwwJGgw')">
+                        <i class="fas fa-music"></i>
+                        Pay with Card or PayPal
+                    </button>               </div>
+
+                <div class="plan-card" data-plan="beast">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Beast Mode</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">17</span>
+                        </div>
+                        <p class="plan-subtitle">30 Songs</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Pro</li>
+                            <li><i class="fas fa-check"></i> Full-force playlist</li>
+                            <li><i class="fas fa-check"></i> Maximum personalization</li>
+                            <li><i class="fas fa-check"></i> For serious lifters & dream-chasers</li>
+                        </ul>
+                    </div>                    <button class="plan-button" onclick="openPopup('https://revonyx.gumroad.com/l/beastmode?_gl=1*150aywu*_ga*MTc3OTM4OTk5NC4xNzUzODY3MzE5*_ga_6LJN6D94N6*czE3NTM5MjA2ODIkbzUkZzEkdDE3NTM5MjQyNTYkajM3JGwwJGgw')">
+                        <i class="fas fa-music"></i>
+                        Pay with Card or PayPal
+                    </button>                </div>
+            </div>
+
+            <!-- Custom Request -->
+            <div class="custom-request">
+                <div class="custom-card">
+                    <h3><i class="fas fa-magic"></i> Need Something Custom?</h3>
+                    <p>Want more songs, specific genres, or special requirements? Let's discuss your custom needs.</p>
+                    <div class="custom-buttons">
+                        <a href="https://t.me/Revonyx1" target="_blank" class="custom-btn telegram">
+                            <i class="fab fa-telegram"></i>
+                            Contact on Telegram
+                        </a>
+                        <a href="https://www.instagram.com/themusicvibeall/" target="_blank" class="custom-btn instagram">
+                            <i class="fab fa-instagram"></i>
+                            Contact on Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>
+
+
+
+
+
+  <!-- Gumroad Popup -->
+  <div id="gumroad-popup">
+    <button id="close-btn" onclick="closePopup()">Close</button>
+    <iframe id="gumroad-frame" allow="payment"></iframe>
+  </div>
+
+  <!-- Thank You Section -->
+  <section id="thank-you">
+    <h2>🎉 Thank You for Your Purchase!</h2>
+    <p>We’ve received your order and are preparing your music package. Stay tuned!</p>
+  </section>
+
+
+
