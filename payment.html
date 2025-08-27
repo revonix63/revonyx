@@ -166,7 +166,24 @@ src="https://www.facebook.com/tr?id=1199978625220576&ev=PageView&noscript=1"
 
   <script src="https://gumroad.com/js/gumroad.js"></script>
 
-
+   <script>
+window.addEventListener("message", function(event) {
+    // Ensure the message is from Gumroad for security
+    if (event.origin === "https://gumroad.com") {
+        try {
+            var data = JSON.parse(event.data);
+            // Check if the message indicates a successful sale
+            if (data.post_message_name === "sale") {
+                // Redirect to your thank you page
+                window.location.href = "https://revonyx.site/thankyou.html";
+            }
+        } catch (e) {
+            // Log any errors during message parsing (optional, for debugging)
+            console.error("Error parsing Gumroad message:", e);
+        }
+    }
+});
+</script>
     <script src="js/main.js"></script>
     <script src="js/payment.js"></script>
 
