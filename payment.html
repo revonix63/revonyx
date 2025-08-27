@@ -161,9 +161,14 @@ src="https://www.facebook.com/tr?id=1199978625220576&ev=PageView&noscript=1"
     </section>
 
 
-  <script src="https://gumroad.com/js/gumroad.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/payment.js"></script>
 
-   <script>
+    <!-- Gumroad JavaScript - Include ONCE at the end of body -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+
+    <!-- JavaScript Listener for Gumroad Sales - Place AFTER Gumroad script -->
+    <script>
 window.addEventListener("message", function(event) {
     // Ensure the message is from Gumroad for security
     if (event.origin === "https://gumroad.com") {
@@ -181,22 +186,14 @@ window.addEventListener("message", function(event) {
     }
 });
 </script>
-    <script src="js/main.js"></script>
-    <script src="js/payment.js"></script>
-
-     
-</body>
-</html>
-
-
-
-
 
   <!-- Thank You Section -->
   <section id="thank-you">
     <h2>🎉 Thank You for Your Purchase!</h2>
     <p>We’ve received your order and are preparing your music package. Stay tuned!</p>
   </section>
+
+</body>
 
 
 
